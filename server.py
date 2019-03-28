@@ -25,6 +25,7 @@ while True:
                 # message from client
                 print(list(client_address)[0],end="")
                 print (": %s" % data)
+                # Enter your message to send to client
                 new_data = str(input("You: ")).encode("utf-8")
                 connection.send(new_data)       
     finally:
